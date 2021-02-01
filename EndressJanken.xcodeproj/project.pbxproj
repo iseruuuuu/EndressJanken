@@ -13,6 +13,11 @@
 		941E690325C5310600429BC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 941E690125C5310600429BC8 /* Main.storyboard */; };
 		941E690525C5310800429BC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 941E690425C5310800429BC8 /* Assets.xcassets */; };
 		941E690825C5310800429BC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 941E690625C5310800429BC8 /* LaunchScreen.storyboard */; };
+		941E691125C533FB00429BC8 /* cho.png in Resources */ = {isa = PBXBuildFile; fileRef = 941E691025C533FB00429BC8 /* cho.png */; };
+		941E691425C5340D00429BC8 /* gu.png in Resources */ = {isa = PBXBuildFile; fileRef = 941E691325C5340D00429BC8 /* gu.png */; };
+		941E691725C5341B00429BC8 /* pa.png in Resources */ = {isa = PBXBuildFile; fileRef = 941E691625C5341B00429BC8 /* pa.png */; };
+		941E693C25C5720E00429BC8 /* gameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E693B25C5720E00429BC8 /* gameOver.swift */; };
+		941E694125C5761800429BC8 /* Start.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941E694025C5761800429BC8 /* Start.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		941E690425C5310800429BC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		941E690725C5310800429BC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		941E690925C5310800429BC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		941E691025C533FB00429BC8 /* cho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cho.png; sourceTree = "<group>"; };
+		941E691325C5340D00429BC8 /* gu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gu.png; sourceTree = "<group>"; };
+		941E691625C5341B00429BC8 /* pa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pa.png; sourceTree = "<group>"; };
+		941E693B25C5720E00429BC8 /* gameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameOver.swift; sourceTree = "<group>"; };
+		941E694025C5761800429BC8 /* Start.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Start.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +69,12 @@
 				941E68FB25C5310600429BC8 /* AppDelegate.swift */,
 				941E68FD25C5310600429BC8 /* SceneDelegate.swift */,
 				941E68FF25C5310600429BC8 /* ViewController.swift */,
+				941E693B25C5720E00429BC8 /* gameOver.swift */,
+				941E694025C5761800429BC8 /* Start.swift */,
 				941E690125C5310600429BC8 /* Main.storyboard */,
+				941E691325C5340D00429BC8 /* gu.png */,
+				941E691025C533FB00429BC8 /* cho.png */,
+				941E691625C5341B00429BC8 /* pa.png */,
 				941E690425C5310800429BC8 /* Assets.xcassets */,
 				941E690625C5310800429BC8 /* LaunchScreen.storyboard */,
 				941E690925C5310800429BC8 /* Info.plist */,
@@ -124,8 +139,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				941E691425C5340D00429BC8 /* gu.png in Resources */,
+				941E691125C533FB00429BC8 /* cho.png in Resources */,
 				941E690825C5310800429BC8 /* LaunchScreen.storyboard in Resources */,
 				941E690525C5310800429BC8 /* Assets.xcassets in Resources */,
+				941E691725C5341B00429BC8 /* pa.png in Resources */,
 				941E690325C5310600429BC8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +157,9 @@
 			files = (
 				941E690025C5310600429BC8 /* ViewController.swift in Sources */,
 				941E68FC25C5310600429BC8 /* AppDelegate.swift in Sources */,
+				941E694125C5761800429BC8 /* Start.swift in Sources */,
 				941E68FE25C5310600429BC8 /* SceneDelegate.swift in Sources */,
+				941E693C25C5720E00429BC8 /* gameOver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,10 +313,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.02;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Iseryuiseki.EndressJanken;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,10 +333,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.02;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Iseryuiseki.EndressJanken;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
